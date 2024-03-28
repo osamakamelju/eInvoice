@@ -1,0 +1,51 @@
+@import './base.css';
+
+@media print {
+  footer {
+      position: fixed;
+      bottom: 0;
+  }
+  header {
+      position: fixed;
+      bottom: 0;
+  }
+  .tableBody {
+      margin-top: 50px;
+      margin-bottom: 50px;
+  }
+}
+
+
+#app {
+  max-width: fit-content;
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(0, 15%, 95%, 0.2);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+  #app {
+    display:flex;
+    grid-template-columns: 1fr 1fr;
+    padding:initial;
+  }
+}
